@@ -11,7 +11,9 @@
 
 ---
 
-Data from ESP32 is send to Azure IoT Hub - then the Azure Function take that data and save into Cosmos DB. Then I use fast API to take and visualize in this mobile app. It is my capstone project
+Data from ESP32 is send to Azure IoT Hub - then the Azure Function take that data and save into Cosmos DB. Then I use fast API to take and visualize in this mobile app. It is the part of my capstone project.
+
+
 link of fast api: https://github.com/Coderbug3407/pillow-fashAPI
 
 ## 🚀 Features
