@@ -1,7 +1,7 @@
 # SNOREGUARD
 
 ![SNOREGUARD Banner](https://img.shields.io/badge/Android-Kotlin-blue?logo=android)
-**Smart Snoring Detection & Intervention App**
+**Smart Snoring Data Analyze App**
 
 ---
 
