@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">SNOREGUARD</string>
+
+<!-- Bottom Navigation -->
+<string name="nav_home">Home</string>
+<string name="nav_report">Report</string>
+<string name="nav_setting">Setting</string>
+<string name="nav_me">Me</string>
+
+<!-- Report Screen -->
+    <string name="title_home">Home</string>
+<string name="title_report">Report</string>
+    <string name="title_me">Me</string>
+<string name="daily_report">Daily Report</string>
+<string name="no_device_added">No device added</string>
+<string name="snoring_intervention_performance">Snoring &amp; Intervention Performance</string>
+<string name="effective_intervention_rate">Effective Intervention Rate</string>
+<string name="intervention_performance">Intervention Performance</string>
+<string name="no_data">No data</string>
+<string name="quiet">Quiet</string>
+<string name="light">Light</string>
+<string name="medium">Medium</string>
+<string name="loud">Loud</string>
+<string name="epic">Epic</string>
+<string name="snoring_time">Snoring time</string>
+<string name="intervention_time">Intervention time</string>
+<string name="snoring_night">Snoring/Night</string>
+<string name="intervention_improvement">Intervention Improvement</string>
+<string name="before_intervention">Before intervention</string>
+<string name="after_intervention">After intervention</string>
+<string name="time_format">%1$dh%2$dmin</string>
+<string name="min_format">%1$dmin</string>
+<string name="percent_format">%1$d%%</string>
+    <string name="no_data_for_date">No snoring data for %s</string>
+
+</resources>

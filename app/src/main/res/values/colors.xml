@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- App theme colors -->
+    <color name="background_dark">#1E1B2E</color>
+    <color name="card_background">#262339</color>
+    <color name="primary_purple">#8B60FE</color>
+    <color name="accent_teal">#00D2D3</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#9E9BB2</color>
+
+    <!-- Snoring intensity colors -->
+    <color name="snoring_quiet">#8B60FE</color>
+    <color name="snoring_light">#00D2D3</color>
+    <color name="snoring_medium">#5B8DEF</color>
+    <color name="snoring_loud">#F4D03F</color>
+    <color name="snoring_epic">#E74C3C</color>
+
+    <!-- Progress colors -->
+    <color name="progress_background">#2C293D</color>
+</resources>
