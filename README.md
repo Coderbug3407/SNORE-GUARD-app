@@ -8,9 +8,10 @@
 ## 📱 Introduction
 
 **SNOREGUARD** is an Android application for smart snoring detection, analysis, and intervention using SNORE-GUARD pillow. The app provides detailed reports, intuitive charts, and supports WiFi configuration for the device. 
+---
+
 Data from ESP32 is send to Azure IoT Hub - then the Azure Function take that data and save into Cosmos DB. Then I use fast API to take and visualize in this mobile app. It is my capstone project
 link of fast api: https://github.com/Coderbug3407/pillow-fashAPI
----
 
 ## 🚀 Features
 
