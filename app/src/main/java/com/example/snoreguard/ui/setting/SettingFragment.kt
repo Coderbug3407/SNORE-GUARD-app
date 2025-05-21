@@ -2,6 +2,7 @@ package com.example.snoreguard.ui.setting
 
 import android.Manifest
 import android.content.pm.PackageManager
+import android.net.wifi.WifiManager
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -155,12 +156,6 @@ class SettingFragment : Fragment() {
                         ContextCompat.getColor(requireContext(), R.color.snoring_epic)
                     )
                 }
-                SmartConfigViewModel.ConnectionStatus.TIMEOUT -> {
-                    binding.tvConnectionStatus.text = "Connection Timeout"
-                    binding.tvConnectionStatus.setTextColor(
-                        ContextCompat.getColor(requireContext(), R.color.snoring_loud)
-                    )
-                }
             }
         }
 
@@ -205,9 +200,12 @@ class SettingFragment : Fragment() {
     private fun connectToDevice() {
         val ssid = binding.autoCompleteWifiNetwork.text.toString()
         val password = binding.etWifiPassword.text.toString()
+        val wifiManager = requireContext().getSystemService(WifiManager::class.java)
+        val wifiInfo = wifiManager.connectionInfo
+        val bssid = wifiInfo.bssid
 
-        if (ssid.isNotEmpty()) {
-            viewModel.startSmartConfig(ssid, password)
+        if (ssid.isNotEmpty() && bssid != null) {
+            viewModel.startSmartConfig(requireContext(), ssid, bssid, password)
         } else {
             Toast.makeText(
                 requireContext(),

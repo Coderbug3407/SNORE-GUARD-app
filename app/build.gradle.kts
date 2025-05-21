@@ -68,17 +68,19 @@ dependencies {
     implementation(libs.logging.interceptor)
 
     // Gson for JSON parsing
-    //noinspection UseTomlInstead
     implementation("com.google.code.gson:gson:2.10.1")
 
     // Coroutines
     implementation(libs.kotlinx.coroutines.android)
 
     // Charts
-    implementation(libs.mpandroidchart)
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 
     // ViewBinding
     implementation(libs.androidx.databinding.runtime)
+
+    // ESP-Touch for ESP32 SmartConfig
+    implementation(project(":libs:EsptouchForAndroid:esptouch"))
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
